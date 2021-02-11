@@ -4,16 +4,14 @@
 
 Name: 'Your real name'  
 Legi-Nr: 'Your legi number'
+Email: 'Your email address'
 
 Follow the [instructions](#workflow) to updated your private repository.
 
 ## Assignments Overview
 
-[Assignment 1](assignment1) (Due date: 15.03.2019 08:00)  
-[Assignment 2](assignment2) (Due date: 29.03.2019 09:00)  
-[Assignment 3](assignment3) (Due date: None (optional task))  
-[Assignment 4](assignment4) (Due date: 03.05.2019 08:00)  
-[Assignment 5](assignment5) (Due date: 17.05.2019 09:00)  
+[Assignment 1](assignment1) (Due date: 12.03.2021 10:00)  
+
 
 ## General Rules and Instructions
 
@@ -21,7 +19,7 @@ Follow the [instructions](#workflow) to updated your private repository.
 Copying code (either from other students or from external sources) is strictly prohibited! We will be using automatic anti-plagiarism tools, and any violation of this rule will lead to expulsion from the class. Late submissions will generally not be accepted. In case of serious illness or emergency, please notify Michael and provide a relevant medical certificate.
 
 ### Provided Libraries
-For each assignment, you will use the geometry processing library [libigl](https://github.com/libigl/libigl), which includes implementations of many of the algorithms presented in class. The libigl library includes a set of tutorials, an introduction which can be found [online](https://libigl.github.io/tutorial/). You are advised to look over the relevant tutorials before starting the implementation for the assignments; you are also encouraged to examine the source code of all the library functions that you use in your code to see how they were implemented. To simplify compilation, we will use libigl as a header-only library (note that, if you prefer, you can compile it into a set of static libraries for faster builds at your own risk (this can be brittle on some platforms). We already included libigl as a git submodule in the course assignment repository [https://github.com/eth-igl/GP2019-Assignments.git](https://github.com/eth-igl/GP2019-Assignments.git) and you don't need to download it yourself. All further dependencies of libigl (like Eigen) are included as submodules in the directory 'libigl/external/' No libraries apart from those are permitted unless stated otherwise.
+For each assignment, you will use the geometry processing library [libigl](https://github.com/libigl/libigl), which includes implementations of many of the algorithms presented in class. The libigl library includes a set of tutorials, an introduction which can be found [online](https://libigl.github.io/tutorial/). You are advised to look over the relevant tutorials before starting the implementation for the assignments; you are also encouraged to examine the source code of all the library functions that you use in your code to see how they were implemented. To simplify compilation, we will use libigl as a header-only library (note that, if you prefer, you can compile it into a set of static libraries for faster builds at your own risk (this can be brittle on some platforms). We already included libigl as a git submodule in the course assignment repository [https://github.com/eth-igl/GP2021-Assignments.git](https://github.com/eth-igl/GP2021-Assignments.git) and you don't need to download it yourself. All further dependencies of libigl (like Eigen) are included as submodules in the directory 'libigl/external/' No libraries apart from those are permitted unless stated otherwise.
 
 ### Installing Git and CMAKE
 Before we can begin, you must have Git running, a distributed revision control system which you need to handin your assignments as well as keeping track of your code changes. We refer you to the online [Pro Git book](https://git-scm.com/book/en/v2) for more information. There you will also find [instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]) on how to to install it. On windows we suggest using [git for windows](https://git-for-windows.github.io/).
@@ -42,14 +40,14 @@ Before you are able to clone your private assignment repository, you need to hav
 
 In the next step you need to clone it to your local harddrive
 ```
-git clone --recursive https://github.com/eth-igl/gp19-'Your_Git_Username'.git
+git clone --recursive https://github.com/eth-igl/gp21-'Your_Git_Username'.git
 ```
 'Your_Git_Username' needs to be replaced accordingly. This can take a moment.
 
 Next, cd into the newly created folder, and add the base assignment repository as a remote:
 ```
-cd gp19-'Your_Git_Username'
-git remote add base https://github.com/eth-igl/GP2019-Assignments.git
+cd gp21-'Your_Git_Username'
+git remote add base https://github.com/eth-igl/GP2021-Assignments.git
 ```
 Now you should have your local clone of the assignment repository ready. Have a look at the new repository folder and open the 'README.md'. It contains the text you are just reading. Please fill in your name and student number at the top of this file and save. Then you need to stage and commit this changed file:
 ```
@@ -57,7 +55,7 @@ git add README.md
 git commit -m "Adjust README.md"
 git push
 ```
-You should now be able to see your name online on your private repository: https://github.com/eth-igl/gp19-'Your_Git_Username'
+You should now be able to see your name online on your private repository: https://github.com/eth-igl/gp21-'Your_Git_Username'
 
 ### Building Each Assignment
 In the assignment repository you will find the different assignment directories 'assignmentX'. For now you only see the first one 'assignment1'. To compile the assignment code we will use the CMake building system.
@@ -105,4 +103,6 @@ git commit -m "Solution assignment X"
 git push
 ```
 
+### Questions and discussion
+Please use the "Issues" above to post your questions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
 **The solutions must be submitted before the corresponding demo session. Late submissions will not be accepted.**
