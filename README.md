@@ -104,6 +104,7 @@ git commit -m "Solution assignment X"
 git push
 ```
 
-### Questions and discussion
-Please use the "Issues" above to post your questions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
+### Using Issues for discussion 
+Please use the "Issues" above to post your questions and discussions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
+
 **The solutions must be submitted before the corresponding demo session. Late submissions will not be accepted.**
