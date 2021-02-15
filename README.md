@@ -17,7 +17,7 @@ Follow the [instructions](#workflow) to updated your private repository.
 ## General Rules and Instructions
 
 ### Plagiarism Note and Late Policy
-Copying code (either from other students or from external sources) is strictly prohibited! We will be using automatic anti-plagiarism tools, and any violation of this rule will lead to expulsion from the class. Late submissions will generally not be accepted. In case of serious illness or emergency, please notify Michael and provide a relevant medical certificate.
+Copying code (either from other students or from external sources) is strictly prohibited! We will be using automatic anti-plagiarism tools, and any violation of this rule will lead to expulsion from the class. Late submissions will generally not be accepted. In case of serious illness or emergency, please notify Floor and provide a relevant medical certificate. 
 
 ### Provided Libraries
 For each assignment, you will use the geometry processing library [libigl](https://github.com/libigl/libigl), which includes implementations of many of the algorithms presented in class. The libigl library includes a set of tutorials, an introduction which can be found [online](https://libigl.github.io/tutorial/). You are advised to look over the relevant tutorials before starting the implementation for the assignments; you are also encouraged to examine the source code of all the library functions that you use in your code to see how they were implemented. To simplify compilation, we will use libigl as a header-only library (note that, if you prefer, you can compile it into a set of static libraries for faster builds at your own risk (this can be brittle on some platforms). We already included libigl as a git submodule in the course assignment repository [https://github.com/eth-igl/GP2021-Assignments.git](https://github.com/eth-igl/GP2021-Assignments.git) and you don't need to download it yourself. All further dependencies of libigl (like Eigen) are included as submodules in the directory 'libigl/external/' No libraries apart from those are permitted unless stated otherwise.
@@ -76,6 +76,8 @@ Compile and run the executable, e.g.:
 make && ./assignment1 <some mesh file>
 ```
 Or use your favorite IDE.
+
+Please compile your code in Release mode.
 
 If you encounter any problems, please create an issue on the assignments repository on GitHub or ask the assistant in the exercise session.
 
