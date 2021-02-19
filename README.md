@@ -49,6 +49,7 @@ Next, cd into the newly created folder, and add the base assignment repository a
 ```
 cd gp21-'Your_Git_Username'
 git remote add base https://github.com/eth-igl/GP2021-Assignments.git
+git pull base master
 ```
 Now you should have your local clone of the assignment repository ready. Have a look at the new repository folder and open the 'README.md'. It contains the text you are just reading. Please fill in your name and student number at the top of this file and save. Then you need to stage and commit this changed file:
 ```
