@@ -50,9 +50,11 @@ endfunction()
 ## Eigen
 function(igl_download_eigen)
 	igl_download_project(eigen
+		GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
+		GIT_TAG        21ae2afd4edaa1b69782c67a54182d34efe43f9c
 		URL           http://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz
 		URL_MD5       8ad10ac703a78143a4062c9bda9d8fd3
-	)
+		)
 endfunction()
 
 ## Embree
