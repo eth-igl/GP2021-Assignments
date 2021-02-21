@@ -1,6 +1,9 @@
 #include <iostream>
 #include <igl/readOFF.h>
 #include <igl/opengl/glfw/Viewer.h>
+#include <igl/opengl/glfw/imgui/ImGuiMenu.h>
+#include <igl/opengl/glfw/imgui/ImGuiHelpers.h>
+#include <imgui/imgui.h>
 /*** insert any libigl headers here ***/
 
 using namespace std;
@@ -118,5 +121,9 @@ int main(int argc, char *argv[]) {
 
     callback_key_down(viewer, '1', 0);
 
+    // Attach a menu plugin
+    igl::opengl::glfw::imgui::ImGuiMenu menu;
+    viewer.plugins.push_back(&menu);
+    
     viewer.launch();
 }
