@@ -101,11 +101,12 @@ git submodule update --init --recursive
 ### Solution Submission
 In every assignment directory you will find a 'README.md' file in which we will specify the required screenshots and console outputs. You should briefly summarize and report your results and observations, or discuss possible problems. For a quick introduction of the Markdown syntax see: https://guides.github.com/features/mastering-markdown/
 
-To submit your final solution of the assignment please add the following commit message: "Solution assignment X". E.g:
+To submit your solution of the assignment please add the following commit message: "Solution assignment X". E.g:
 ```
 git commit -m "Solution assignment X"
 git push
 ```
+You can keep updating your code before the deadline. After the deadline, please not change the code before we send you the scores.
 
 ### Using Issues for discussion 
 Please use the "Issues" above to post your questions and discussions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
