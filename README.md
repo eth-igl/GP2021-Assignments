@@ -106,7 +106,7 @@ To submit your solution of the assignment please add the following commit messag
 git commit -m "Solution assignment X"
 git push
 ```
-You can keep updating your code before the deadline. After the deadline, please not change the code before we send you the scores.
+You can keep updating your code before the deadline. After the deadline, please don't change the code before we send you the scores.
 
 ### Using Issues for discussion 
 Please use the "Issues" above to post your questions and discussions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
