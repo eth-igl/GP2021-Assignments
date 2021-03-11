@@ -12,7 +12,7 @@ Follow the [instructions](#workflow) to updated your private repository.
 ## Assignments Overview
 
 [Assignment 1](assignment1) (Due date: 12.03.2021 10:00)  
-
+[Assignment 2](assignment2) (Due date: 31.03.2021 11:00) 
 
 ## General Rules and Instructions
 
