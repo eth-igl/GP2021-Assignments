@@ -79,13 +79,12 @@ int main(int argc, char *argv[])
   menu.callback_draw_custom_window = [&]()
   {
     // Define next window position + size
-    ImGui::SetNextWindowPos(ImVec2(180.f * menu.menu_scaling(), 10), ImGuiSetCond_FirstUseEver);
-    ImGui::SetNextWindowSize(ImVec2(200, 160), ImGuiSetCond_FirstUseEver);
+    ImGui::SetNextWindowPos(ImVec2(180.f * menu.menu_scaling(), 10), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowSize(ImVec2(200, 160), ImGuiCond_FirstUseEver);
     ImGui::Begin(
         "New Window", nullptr,
         ImGuiWindowFlags_NoSavedSettings
     );
-
 
     // Expose the same variable directly ...
     ImGui::PushItemWidth(-80);
@@ -100,5 +99,6 @@ int main(int argc, char *argv[])
 
   // Plot the mesh
   viewer.data().set_mesh(V, F);
+  viewer.data().add_label(viewer.data().V.row(0) + viewer.data().V_normals.row(0).normalized()*0.005, "Hello World!");
   viewer.launch();
 }

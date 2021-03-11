@@ -4,6 +4,7 @@
 
 Name: 'Your real name'  
 Legi-Nr: 'Your legi number'
+
 Email: 'Your email address'
 
 Follow the [instructions](#workflow) to updated your private repository.
@@ -16,7 +17,7 @@ Follow the [instructions](#workflow) to updated your private repository.
 ## General Rules and Instructions
 
 ### Plagiarism Note and Late Policy
-Copying code (either from other students or from external sources) is strictly prohibited! We will be using automatic anti-plagiarism tools, and any violation of this rule will lead to expulsion from the class. Late submissions will generally not be accepted. In case of serious illness or emergency, please notify Michael and provide a relevant medical certificate.
+Copying code (either from other students or from external sources) is strictly prohibited! We will be using automatic anti-plagiarism tools, and any violation of this rule will lead to expulsion from the class. Late submissions will generally not be accepted. In case of serious illness or emergency, please notify Floor and provide a relevant medical certificate. 
 
 ### Provided Libraries
 For each assignment, you will use the geometry processing library [libigl](https://github.com/libigl/libigl), which includes implementations of many of the algorithms presented in class. The libigl library includes a set of tutorials, an introduction which can be found [online](https://libigl.github.io/tutorial/). You are advised to look over the relevant tutorials before starting the implementation for the assignments; you are also encouraged to examine the source code of all the library functions that you use in your code to see how they were implemented. To simplify compilation, we will use libigl as a header-only library (note that, if you prefer, you can compile it into a set of static libraries for faster builds at your own risk (this can be brittle on some platforms). We already included libigl as a git submodule in the course assignment repository [https://github.com/eth-igl/GP2021-Assignments.git](https://github.com/eth-igl/GP2021-Assignments.git) and you don't need to download it yourself. All further dependencies of libigl (like Eigen) are included as submodules in the directory 'libigl/external/' No libraries apart from those are permitted unless stated otherwise.
@@ -36,7 +37,7 @@ On Windows you can download it from:
 [https://cmake.org/download/](https://cmake.org/download/)
 
 ### Cloning the Assignment Repository
-Before you are able to clone your private assignment repository, you need to have a active [Github](https://github.com/) account. Then you can create your own private online repository by following this link: https://classroom.github.com/a/8vO7LxYa
+Before you are able to clone your private assignment repository, you need to have a active [Github](https://github.com/) account. Then you can **create your own private online repository** by following this link: https://classroom.github.com/a/-c-axeq2
 
 In the next step you need to clone it to your local harddrive
 ```
@@ -48,6 +49,7 @@ Next, cd into the newly created folder, and add the base assignment repository a
 ```
 cd gp21-'Your_Git_Username'
 git remote add base https://github.com/eth-igl/GP2021-Assignments.git
+git pull base master
 ```
 Now you should have your local clone of the assignment repository ready. Have a look at the new repository folder and open the 'README.md'. It contains the text you are just reading. Please fill in your name and student number at the top of this file and save. Then you need to stage and commit this changed file:
 ```
@@ -76,6 +78,8 @@ make && ./assignment1 <some mesh file>
 ```
 Or use your favorite IDE.
 
+Please compile your code in Release mode.
+
 If you encounter any problems, please create an issue on the assignments repository on GitHub or ask the assistant in the exercise session.
 
 ### Workflow
@@ -97,12 +101,14 @@ git submodule update --init --recursive
 ### Solution Submission
 In every assignment directory you will find a 'README.md' file in which we will specify the required screenshots and console outputs. You should briefly summarize and report your results and observations, or discuss possible problems. For a quick introduction of the Markdown syntax see: https://guides.github.com/features/mastering-markdown/
 
-To submit your final solution of the assignment please add the following commit message: "Solution assignment X". E.g:
+To submit your solution of the assignment please add the following commit message: "Solution assignment X". E.g:
 ```
 git commit -m "Solution assignment X"
 git push
 ```
+You can keep updating your code before the deadline. After the deadline, please don't change the code before we send you the scores.
 
-### Questions and discussion
-Please use the "Issues" above to post your questions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
+### Using Issues for discussion 
+Please use the "Issues" above to post your questions and discussions about the assignments. We will try to answser your questions asap, while all students are encouraged to address these questions to help their fellows.
+
 **The solutions must be submitted before the corresponding demo session. Late submissions will not be accepted.**
