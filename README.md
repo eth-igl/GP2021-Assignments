@@ -89,6 +89,10 @@ Every new assignment needs to be pulled from the base repository:
 ```
 git pull base master
 ```
+or,
+```
+git pull base master --allow-unrelated-histories
+```
 
 To pull bug fixes or changes you can do the following steps:
 ```
